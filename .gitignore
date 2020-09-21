@@ -1,0 +1,8 @@
+*.bbl
+*.out
+*.aux
+*.bcf
+*.run.xml
+*.log
+*.blg
+*.cut
