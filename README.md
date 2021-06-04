@@ -1,7 +1,6 @@
 # CV
 
-Generated in Latex with bib files.
-Currently, this repo serves as a collection of my CV as tex and bib files. 
+Generated in Latex from tex and bib files.
 
 # Run
 
@@ -10,6 +9,4 @@ Currently, this repo serves as a collection of my CV as tex and bib files.
 ```pdflatex cv```
 ```pdflatex cv```
 
-
-# Source 
-LianTze Lim
+acknowledging LianTze Lim

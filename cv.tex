@@ -20,6 +20,18 @@
   \usepackage[varqu,varl,scale=0.9]{zi4}
 \fi
 
+  \usepackage{tikz,xcolor,hyperref}
+
+\definecolor{lime}{HTML}{A6CE39}
+\DeclareRobustCommand{\orcidicon}{
+  \begin{tikzpicture}
+  \draw[lime, fill=lime] (0,0) 
+  circle [radius=0.16] 
+  node[white] {{\fontfamily{qag}\selectfont \tiny ID}};
+  \draw[white, fill=white] (-0.0625,0.095) 
+  circle [radius=0.007];
+  \end{tikzpicture}
+}
 
 %% Only needed if you want a Publication List
 \addbibresource{papers.bib}
@@ -50,11 +62,14 @@
   {\LARGE\bfseries\sffamily Eugen Hruska, Ph.D.}
 
   \makefield{\faGlobe}{\href{https://euhruska.github.io/}{euhruska.github.io}}
-  \makefield{\faTwitter}{\href{https://twitter.com/HruskaEugen}{@HruskaEugen}}
+  \makefield{\orcidicon}{\href{https://orcid.org/0000-0001-5679-8419}{0000-0001-5679-8419}}
   \makefield{\faLinkedin}{\href{https://www.linkedin.com/in/eugen-hruska/}{eugen-hruska}}
 
   \makefield{\faMapMarker}{\href{https://flgroup.emorychem.science/}{Emory University}}
+  \makefield{\faTwitter}{\href{https://twitter.com/HruskaEugen}{@HruskaEugen}}
   \makefield{\faEnvelope[regular]}{\texttt{eugen.hruska$@$emory.com}}
+
+  
 }
 
 \rightheader{~}
@@ -68,13 +83,11 @@
 \begin{document}
 \makeheaders[c]
 \makerubric{employment}
-\makerubric{education}
-
-
 
 \input{publications}
-
+\makerubric{talks}
 \makerubric{awards}
+\makerubric{education}
 \makerubric{teaching}
 \makerubric{service}
 \makerubric{other}
