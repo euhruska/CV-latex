@@ -4,11 +4,12 @@
 \documentclass[letterpaper,skipsamekey,12pt,english]{curve}
 
 
-\usepackage{settings}
+\usepackage{settingsresume}
 
 % Change the fonts if you want
 \ifxetexorluatex % If you're using XeLaTeX or LuaLaTeX
   \usepackage{fontspec} 
+
   %% You can use \setmainfont etc; I'm just using these font packages here because they provide OpenType fonts for use by XeLaTeX/LuaLaTeX anyway
   \usepackage[p,osf,swashQ]{cochineal}
   \usepackage[medium,bold]{cabin}
@@ -22,7 +23,7 @@
 \fi
 
   \usepackage{tikz,xcolor,hyperref}
-
+  %\usepackage{parselines}
 \definecolor{lime}{HTML}{A6CE39}
 \DeclareRobustCommand{\orcidicon}{
   \begin{tikzpicture}
@@ -65,12 +66,10 @@
   \makefield{\faGlobe}{\href{https://euhruska.github.io/}{euhruska.github.io}}
   \= \makefield{\orcidicon}{\href{https://orcid.org/0000-0001-5679-8419}{0000-0001-5679-8419}}
   \= \makefield{\faLinkedin}{\href{https://www.linkedin.com/in/eugen-hruska/}{eugen-hruska}}\\
-
   \makefield{\faMapMarker}{\href{https://flgroup.emorychem.science/}{Emory University}}
   \> \makefield{\faTwitter}{\href{https://twitter.com/HruskaEugen}{@HruskaEugen}}
   \> \makefield{\faEnvelope[regular]}{\texttt{eugen.hruska$@$emory.com}}\\
   \end{tabbing}
-  
 }
 
 \rightheader{~}
@@ -79,19 +78,18 @@
 %\photoscale{0.13}
 %\end{fullonly}
 
-\title{Curriculum Vitae}
+%\title{Curriculum Vitae}
 
 \begin{document}
 \makeheaders[c]
-\makerubric{employment}
-
+\makerubric{employmentshort}
 \input{publications}
 \makerubric{talks}
-\makerubric{awards}
-\makerubric{education}
-\makerubric{teaching}
-\makerubric{service}
-\makerubric{other}
+\makerubric{awardsshort}
+%\makerubric{education}
+%\makerubric{teaching}
+%\makerubric{service}
+%\makerubric{other}
 
 %\makerubric{referee}
 % \input{referee-full}

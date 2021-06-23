@@ -17,7 +17,7 @@
 \RequirePackage{graphicx}
 \RequirePackage[hyphens]{url}
 \RequirePackage{babel}
-\raggedright
+%\raggedright
 
 \RequirePackage[fixed]{fontawesome5}
 
@@ -34,8 +34,8 @@
 \definecolor{MarkerColour}{HTML}{B6073F}
 
 % If you're not a researcher nor an academic, you probably don't need biblatex; delete this line.
-\RequirePackage[backend=biber,bibstyle=apa,sorting=ymdnt,uniquename=init,defernumbers=true]{biblatex}
-%\RequirePackage[backend=biber,bibstyle=authortitle,sorting=ymdnt,uniquename=init,defernumbers=true, maxbibnames=3]{biblatex}
+%\RequirePackage[backend=biber,bibstyle=apa,sorting=ymdnt,uniquename=init,defernumbers=true]{biblatex}
+\RequirePackage[backend=biber,bibstyle=authortitle,sorting=ymdnt,uniquename=init,defernumbers=true, maxbibnames=3, url=false]{biblatex}
 \RequirePackage{csquotes}
 %% Added 17 Jan 2018 from https://tex.stackexchange.com/a/140641/226 and https://tex.stackexchange.com/a/46879/226
 \DeclareSortingTemplate{ymdnt}{
