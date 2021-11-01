@@ -1,0 +1,100 @@
+%%%%%%%%%%%%%%%
+% Source: LianTze Lim (liantze@gmail.com)
+%
+\documentclass[letterpaper,skipsamekey,12pt,english]{curve}
+
+
+\usepackage{settings}
+
+% Change the fonts if you want
+\ifxetexorluatex % If you're using XeLaTeX or LuaLaTeX
+  \usepackage{fontspec} 
+  %% You can use \setmainfont etc; I'm just using these font packages here because they provide OpenType fonts for use by XeLaTeX/LuaLaTeX anyway
+  \usepackage[p,osf,swashQ]{cochineal}
+  \usepackage[medium,bold]{cabin}
+  \usepackage[tabto]
+  \usepackage[varqu,varl,scale=0.9]{zi4}
+\else % If you're using pdfLaTeX or latex
+  \usepackage[T1]{fontenc}
+  \usepackage[p,osf,swashQ]{cochineal}
+  \usepackage{cabin}
+  \usepackage[varqu,varl,scale=0.9]{zi4}
+\fi
+
+  \usepackage{tikz,xcolor,hyperref}
+
+\definecolor{lime}{HTML}{A6CE39}
+\DeclareRobustCommand{\orcidicon}{
+  \begin{tikzpicture}
+  \draw[lime, fill=lime] (0,0) 
+  circle [radius=0.16] 
+  node[white] {{\fontfamily{qag}\selectfont \tiny ID}};
+  \draw[white, fill=white] (-0.0625,0.095) 
+  circle [radius=0.007];
+  \end{tikzpicture}
+}
+
+%% Only needed if you want a Publication List
+\addbibresource{papers.bib}
+
+%% Specify your last name and first name (as given in the .bib) to automatically bold your own name in the publications list. One caveat: You need to write \bibnamedelima where there's a space in your name for this to work properly for now...
+\myname{Hruska}{Eugen}
+% \myname{d'Andrimont}{Raphaël}
+
+% Change the page margins if you want
+% \geometry{left=1cm,right=1cm,top=1.5cm,bottom=1.5cm}
+
+% Change the colours if you want
+\definecolor{SwishLineColour}{HTML}{005FDB}%00FFFF}
+\definecolor{MarkerColour}{HTML}{0049A8}%{0000CC}
+
+% Change the item prefix marker if you want
+% \prefixmarker{$\diamond$}
+
+%% Photo is only shown if "fullonly" is included
+%\includecomment{fullonly}
+% \excludecomment{fullonly}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\leftheader{%
+  {\LARGE\bfseries\sffamily Eugen Hruska, Ph.D.}
+ \begin{tabbing}
+  \makefield{\faGlobe}{\href{https://euhruska.github.io/}{euhruska.github.io}}
+  \= \makefield{\orcidicon}{\href{https://orcid.org/0000-0001-5679-8419}{0000-0001-5679-8419}}
+  \= \makefield{\faLinkedin}{\href{https://www.linkedin.com/in/eugen-hruska/}{eugen-hruska}}\\
+
+  \makefield{\faMapMarker}{\href{https://flgroup.emorychem.science/}{Emory University}}
+  \> \makefield{\faTwitter}{\href{https://twitter.com/HruskaEugen}{@HruskaEugen}}
+  \> \makefield{\faEnvelope[regular]}{\texttt{eugen.hruska$@$emory.com}}\\
+  \end{tabbing}
+  
+}
+
+\rightheader{~}
+%\begin{fullonly}
+%\photo[r]{photo}
+%\photoscale{0.13}
+%\end{fullonly}
+
+\title{Curriculum Vitae}
+
+\begin{document}
+\makeheaders[c]
+\makerubric{employment}
+
+\makerubric{talks}
+\makerubric{bookchapter}
+\makerubric{awards}
+\makerubric{proposals}
+\makerubric{education}
+\makerubric{teaching}
+\makerubric{service}
+\makerubric{other}
+
+%\makerubric{referee}
+% \input{referee-full}
+
+\end{document}
