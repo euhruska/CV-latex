@@ -6,6 +6,9 @@
 
 \usepackage{settings}
 
+%include abstracts
+\usepackage[style=numeric]{biblatex}
+%\usepackage[backend=biber,  style=apa, ]{biblatex}
 % Change the fonts if you want
 \ifxetexorluatex % If you're using XeLaTeX or LuaLaTeX
   \usepackage{fontspec} 
@@ -59,19 +62,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
-\leftheader{%
-  {\LARGE\bfseries\sffamily Eugen Hruska, Ph.D.}
- \begin{tabbing}
-  \makefield{\faGlobe}{\href{https://euhruska.github.io/}{euhruska.github.io}}
-  \= \makefield{\orcidicon}{\href{https://orcid.org/0000-0001-5679-8419}{0000-0001-5679-8419}}
-  \= \makefield{\faLinkedin}{\href{https://www.linkedin.com/in/eugen-hruska/}{eugen-hruska}}\\
 
-  \makefield{\faMapMarker}{\href{https://flgroup.emorychem.science/}{Emory University}}
-  \> \makefield{\faTwitter}{\href{https://twitter.com/HruskaEugen}{@HruskaEugen}}
-  \> \makefield{\faEnvelope[regular]}{\texttt{eugen.hruska$@$emory.com}}\\
-  \end{tabbing}
-  
-}
 
 \rightheader{~}
 %\begin{fullonly}
@@ -79,24 +70,13 @@
 %\photoscale{0.13}
 %\end{fullonly}
 
-\title{Curriculum Vitae}
+\title{Publications}
 
 \begin{document}
 \makeheaders[c]
-\makerubric{employment}
-\makerubric{education}
-
-\makerubric{talks}
-\makerubric{bookchapter}
-
-\makerubric{proposals}
-
-\makerubric{teaching}
-\makerubric{service}
-\makerubric{other}
-\makerubric{awards}
 
 \input{publications}
+
 %\makerubric{referee}
 % \input{referee-full}
 

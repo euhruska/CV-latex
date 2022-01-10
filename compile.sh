@@ -1,0 +1,16 @@
+pdflatex cv
+biber cv
+pdflatex cv
+pdflatex cv
+pdflatex resume
+biber resume
+pdflatex resume
+pdflatex resume
+pdflatex only-pub
+biber only-pub
+pdflatex only-pub
+pdflatex only-pub
+pdflatex cv-nopub
+biber cv-nopub
+pdflatex cv-nopub
+pdflatex cv-nopub

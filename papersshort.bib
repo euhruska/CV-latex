@@ -1,9 +1,8 @@
 
-
 @article{hruska2018quantitative,
   title={Quantitative comparison of adaptive sampling methods for protein dynamics},
   author={Hruska, Eugen and Abella, Jayvee R and N{\"u}ske, Feliks and Kavraki, Lydia E and Clementi, Cecilia},
-  journal={The Journal of Chemical Physics},
+  journal={J. Chem. Phys.},
   volume={149},
   number={24},
   pages={244119},
@@ -15,28 +14,22 @@
 @article{hruska2019extensible,
   title={Extensible and Scalable Adaptive Sampling on Supercomputers},
   author={Hruska, Eugen and Balasubramanian, Vivekanandan and Lee, Hyungro and Jha, Shantenu and Clementi, Cecilia},
-  journal={Journal of Chemical Theory and Computation},
+  journal={J. Chem. Theory Comput.},
   year={2020},
   url={https://pubs.acs.org/doi/10.1021/acs.jctc.0c00991},
 }
 
-
-@article{xppcm1,
-abstract = {Pressure plays essential roles in chemistry by altering structures and controlling chemical reactions. The extreme-pressure polarizable continuum model (XP-PCM) is an emerging method with an efficient quantum mechanical description of small-and medium-sized molecules at high pressure (on the order of GPa). However, its application to large molecular systems was previously hampered by a CPU computation bottleneck: the Pauli repulsion potential unique to XP-PCM requires the evaluation of a large number of electric field integrals, resulting in significant computational overhead compared to the gas-phase or standard-pressure polarizable continuum model calculations. Here, we exploit advances in graphical processing units (GPUs) to accelerate the XP-PCM-integral evaluations. This enables high-pressure quantum chemistry simulation of proteins that used to be computationally intractable. We benchmarked the performance using 18 small proteins in aqueous solutions. Using a single GPU, our method evaluates the XP-PCM free energy of a protein with over 500 atoms and 4000 basis functions within half an hour. The time taken by the XP-PCM-integral evaluation is typically 1{\%} of the time taken for a gas-phase density functional theory (DFT) on the same system. The overall XP-PCM calculations require less computational effort than that for their gas-phase counterpart due to the improved convergence of self-consistent field iterations. Therefore, the description of the high-pressure effects with our GPU-accelerated XP-PCM is feasible for any molecule tractable for gas-phase DFT calculation. We have also validated the accuracy of our method on small molecules whose properties under high pressure are known from experiments or previous theoretical studies.},
-author = {Gale, Ariel and Hruska, Eugen and Liu, Fang},
-journal = {J. Chem. Phys},
-pages = {244103},
-title = {{Quantum Chemistry for Molecules at Extreme Pressure on Graphical Processing Units : Implementation of Extreme Pressure Polarizable Continuum Model}},
-url = {https://doi.org/10.1063/5.0056480},
-volume = {154},
-year = {2021}
+@article{redox1,
+  title={Bridging the Experiment-Calculation Divide: Machine Learning Corrections to Redox Potential Calculations in Implicit and Explicit Solvent Models}, 
+  url={https://doi.org/10.1021/acs.jctc.1c01040}, 
+  journal={J. Chem. Theory Comput.}, 
+  author={Hruska, Eugen and Gale, Ariel and Liu, Fang}, 
+  year={2022},
 }
 
-
-@article{redox1,
-author = {Hruska, Eugen and Gale, Ariel and Liu, Fang},
-title={Bridging the experiment-calculation divide: machine learning corrections to redox potential calculations in implicit and explicit solvent models},
-url={10.33774/chemrxiv-2021-mthjp},
-journal={ChemRxiv},
-year = {2021},
+@article{auto1,
+journal = {submitted}, 
+author = {Hruska, Eugen and Gale, Ariel and Huang, Xiao and Liu, Fang}, 
+title = {AutoSolvate: A Toolkit for Automating Quantum Chemistry Design and Discovery of Solvated Molecules}, 
+year = {2022},
 }
