@@ -9,4 +9,7 @@ Generated in Latex from tex and bib files.
 ```pdflatex cv```
 ```pdflatex cv```
 
+or
+```sh compile.sh```
+
 source LianTze Lim
