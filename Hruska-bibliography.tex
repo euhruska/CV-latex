@@ -1,14 +1,11 @@
 %%%%%%%%%%%%%%%
-% Source: LianTze Lim (liantze@gmail.com)
+% Adapted from: LianTze Lim (liantze@gmail.com)
 %
 \documentclass[letterpaper,skipsamekey,12pt,english]{curve}
 
 
 \usepackage{settings}
 
-%include abstracts
-\usepackage[style=numeric]{biblatex}
-%\usepackage[backend=biber,  style=apa, ]{biblatex}
 % Change the fonts if you want
 \ifxetexorluatex % If you're using XeLaTeX or LuaLaTeX
   \usepackage{fontspec} 
@@ -40,6 +37,10 @@
 %% Only needed if you want a Publication List
 \addbibresource{papers.bib}
 
+\DeclareFieldFormat{abstract}{\par Abstract: \small #1}
+\renewbibmacro*{finentry}{\printfield{abstract}\finentry}
+
+
 %% Specify your last name and first name (as given in the .bib) to automatically bold your own name in the publications list. One caveat: You need to write \bibnamedelima where there's a space in your name for this to work properly for now...
 \myname{Hruska}{Eugen}
 % \myname{d'Andrimont}{Raphaël}
@@ -62,7 +63,19 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
+\leftheader{%
+  {\LARGE\bfseries\sffamily Eugen Hruska, Ph.D.}
+ \begin{tabbing}
+  \makefield{\faGlobe}{\href{https://euhruska.github.io/}{euhruska.github.io}}
+  \= \makefield{\orcidicon}{\href{https://orcid.org/0000-0001-5679-8419}{0000-0001-5679-8419}}
+  \= \makefield{\faLinkedin}{\href{https://www.linkedin.com/in/eugen-hruska/}{eugen-hruska}}\\
 
+  \makefield{\faMapMarker}{\href{https://flgroup.emorychem.science/}{Emory University}}
+  \> \makefield{\faTwitter}{\href{https://twitter.com/HruskaEugen}{@HruskaEugen}}
+  \> \makefield{\faEnvelope[regular]}{\texttt{eugen.hruska$@$emory.edu}}\\
+  \end{tabbing}
+  
+}
 
 \rightheader{~}
 %\begin{fullonly}
@@ -70,12 +83,24 @@
 %\photoscale{0.13}
 %\end{fullonly}
 
-\title{Publications}
+%\title{Criculum Vitae}
 
 \begin{document}
 \makeheaders[c]
-
+%\makerubric{employment}
+%\makerubric{education}
+%\makerubric{teaching}
 \input{publications}
+%\makerubric{talks}
+%\makerubric{bookchapter}
+
+%\makerubric{proposals}
+
+
+%\makerubric{service}
+
+%\makerubric{awards}
+%\makerubric{other}
 
 %\makerubric{referee}
 % \input{referee-full}
