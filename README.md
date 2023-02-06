@@ -13,4 +13,4 @@ or
 ```sh compile.sh```
 
 
-Adapted from [AltaCV](https://github.com/liantze/AltaCV) by [LianTze Lim](https://github.com/liantze)
+Adapted from [AltaCV](https://github.com/liantze/AltaCV)
