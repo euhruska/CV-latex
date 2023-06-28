@@ -37,6 +37,9 @@
 %% Only needed if you want a Publication List
 \addbibresource{papers.bib}
 
+\DeclareFieldFormat{abstract}{\par Abstract: \small #1}
+\renewbibmacro*{finentry}{\printfield{abstract}\finentry}
+
 
 %% Specify your last name and first name (as given in the .bib) to automatically bold your own name in the publications list. One caveat: You need to write \bibnamedelima where there's a space in your name for this to work properly for now...
 \myname{Hruska}{Eugen}

@@ -10,6 +10,10 @@ pdflatex Hruska-bibliography
 biber Hruska-bibliography
 pdflatex Hruska-bibliography
 pdflatex Hruska-bibliography
+pdflatex Hruska-bibliography-abstracts
+biber Hruska-bibliography-abstracts
+pdflatex Hruska-bibliography-abstracts
+pdflatex Hruska-bibliography-abstracts
 pdflatex Hruska-CV-nopub
 biber Hruska-CV-nopub
 pdflatex Hruska-CV-nopub
