@@ -1,15 +1,14 @@
 %%%%%%%%%%%%%%%
-% Source: LianTze Lim (liantze@gmail.com)
+% Adapted from: LianTze Lim (liantze@gmail.com)
 %
-\documentclass[letterpaper,skipsamekey,12pt,english]{curve}
+\documentclass[a4paper,skipsamekey,12pt,english]{curve}
 
 
-\usepackage{settingsresume}
+\usepackage{settings}
 
 % Change the fonts if you want
 \ifxetexorluatex % If you're using XeLaTeX or LuaLaTeX
   \usepackage{fontspec} 
-
   %% You can use \setmainfont etc; I'm just using these font packages here because they provide OpenType fonts for use by XeLaTeX/LuaLaTeX anyway
   \usepackage[p,osf,swashQ]{cochineal}
   \usepackage[medium,bold]{cabin}
@@ -23,7 +22,7 @@
 \fi
 
   \usepackage{tikz,xcolor,hyperref}
-  %\usepackage{parselines}
+
 \definecolor{lime}{HTML}{A6CE39}
 \DeclareRobustCommand{\orcidicon}{
   \begin{tikzpicture}
@@ -36,7 +35,7 @@
 }
 
 %% Only needed if you want a Publication List
-\addbibresource{papersshort.bib}
+\addbibresource{papers2.bib}
 
 %% Specify your last name and first name (as given in the .bib) to automatically bold your own name in the publications list. One caveat: You need to write \bibnamedelima where there's a space in your name for this to work properly for now...
 \myname{Hruska}{Eugen}
@@ -64,13 +63,14 @@
   {\LARGE\bfseries\sffamily Eugen Hruška, Ph.D.}
  \begin{tabbing}
   \makefield{\faGlobe}{\href{https://Hruska-Lab.github.io}{Hruska-Lab.github.io}}
-  \= \makefield{\orcidicon}{\href{https://orcid.org/0000-0001-5679-8419}{0000-0001-5679-8419}}
-  \= \makefield{\faLinkedin}{\href{https://www.linkedin.com/in/eugen-hruska/}{eugen-hruska}}\\
+  \= \textbf{ORCID:} \href{https://orcid.org/0000-0001-5679-8419}{0000-0001-5679-8419}
+  \= \hspace{0.2em}\textbf{Researcher ID:} \href{https://www.webofscience.com/wos/author/record/AAY-5878-2020}{AAY-5878-2020} \\
 
-  \makefield{\faMapMarker}{\href{https://www.faf.cuni.cz/?lang=en-gb}{Charles University}}
-  \> \makefield{\faTwitter}{\href{https://twitter.com/HruskaEugen}{@HruskaEugen}}
+  \makefield{\faMapMarker}{\href{https://portal.faf.cuni.cz/Profile/Hruska-Eugen/}{Charles University}}
+  \> \textbf{Scopus ID:} \href{https://www.scopus.com/authid/detail.uri?authorId=57193802868}{57193802868}
   \> \makefield{\faEnvelope[regular]}{\texttt{eugen.hruska$@$faf.cuni.cz}}\\
   \end{tabbing}
+  
 }
 
 \rightheader{~}
@@ -79,17 +79,21 @@
 %\photoscale{0.13}
 %\end{fullonly}
 
-%\title{Curriculum Vitae}
+\title{Curriculum Vitae}
 
 \begin{document}
 \makeheaders[c]
-\makerubric{employmentshort}
-\input{publicationsshort}
+\makerubric{employment}
+\makerubric{education}
+\makerubric{teaching}
+\newpage
+\input{publications2}
 %\makerubric{talks}
-\makerubric{awardsshort}
-%\makerubric{education}
-%\makerubric{teaching}
+
+\makerubric{proposals}
+\makerubric{compgrant}
 %\makerubric{public}
+
 %\makerubric{other}
 
 %\makerubric{referee}
